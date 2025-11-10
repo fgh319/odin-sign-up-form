@@ -7,7 +7,60 @@
     <title>Sign up</title>
 </head>
 <body>
-    <div id="image"></div>
-    <div id="content"></div>
+    <div id="logo-section">
+        <div class="logo-container">
+            <img class="logo" src="./images/odin-lined.png" alt="odin logo">
+            <span>ODIN</span>
+        </div>
+        <div class="bg-location">Photo by 
+            <a href="https://unsplash.com/@mayyue" target="_blank">
+                may yue</a> on 
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+        </div>
+    </div>
+    <form action="" method="post">
+        <p class="intro">
+            This is not a real online service! You know you need something<br>
+            like this in your life to help you realize your deepest dreams.<br>
+            Sign up now to get started.<br><br>
+            You know you want to.
+        </p>
+        <div class="form-section">
+            <p>Let's do this!</p>
+            <div class="form-items">
+                <div class="form-item first_name">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" required> 
+                </div>
+                <div class=" form-item last_name">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="form-item email">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-item phone_number">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone_number" required>
+                </div>
+                <div class="form-item password">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-item confirm_password">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" required>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Create Account</button>
+        <div class="login-container">
+            Already have an account? 
+            <a href="https://www.google.com" target="_blank">
+                <span>Log in</span>
+            </a>
+        </div>
+    </form>
 </body>
 </html>

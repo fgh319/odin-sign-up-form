@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./fonts/Norse-Bold.otf) format("opentype");
+}
+
+body {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100dvh;
+}
+
+#logo-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 20vh;
+}
+
+.logo-container span {
+    font-family: "Norse Bold";
+    font-size: 80px;
+    color: white;
+}
+
+.logo {
+    width: 80px;
+}
+
+.bg-location {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.bg-location a {
+    color: inherit;
+}
+
+form {
+    flex: 2;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+.intro {
+    font-size: large;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px 50px 30px 50px;
+    margin-top: 40px;
+    box-shadow: 0 3px 6px #ddd;
+}
+
+.form-section p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.form-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.form-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-item label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-item input {
+    width: 70%;
+    line-height: 2em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 3px;
+}
+
+.form-item input:focus {
+    outline: none;
+    border-color: rgb(52, 114, 237);
+    box-shadow: 2px 2px 5px #ddd;
+}
+
+/* .form-item input:valid {
+    border-color: rgb(133, 192, 23);
+}
+
+.form-item input:invalid {
+    border-color: red;
+} */
+
+form button {
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 8px 24px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(133, 192, 23);
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.login-container a {
+    color: rgb(133, 192, 23);
+}
